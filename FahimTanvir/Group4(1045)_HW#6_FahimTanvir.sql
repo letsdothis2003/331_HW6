@@ -74,20 +74,25 @@ not both. This is done by a series of except operators met with a union to selec
 and bring them together in the end. Purpose is to identify possible gift-givers, distributors or even
 fraudsters*/
 
-SELECT ShipToAddressID AS AddressID
-FROM Sales.SalesOrderHeader
-EXCEPT
-SELECT BillToAddressID AS AddressID
-FROM Sales.SalesOrderHeader
+SELECT AddressID, UsageType
+FROM (
+    SELECT ShipToAddressID AS AddressID, 'Shipper' AS UsageType
+    FROM Sales.SalesOrderHeader
+    EXCEPT
+    SELECT BillToAddressID AS AddressID, 'Shipper'
+    FROM Sales.SalesOrderHeader
+) AS OnlyShipping
 
 UNION
 
-
-SELECT BillToAddressID AS AddressID
-FROM Sales.SalesOrderHeader
-EXCEPT
-SELECT ShipToAddressID AS AddressID
-FROM Sales.SalesOrderHeader;
+SELECT AddressID, UsageType
+FROM (
+    SELECT BillToAddressID AS AddressID, 'Billing' AS UsageType
+    FROM Sales.SalesOrderHeader
+    EXCEPT
+    SELECT ShipToAddressID AS AddressID, 'Billing'
+    FROM Sales.SalesOrderHeader
+) AS OnlyBilling;
 
 -- 5. 
 /*This one finds IDS of bussinesses from 3 different tables and only shows the ones
