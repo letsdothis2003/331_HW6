@@ -182,8 +182,8 @@ ORDER BY
 -- 9. 
 /*We will find all orders with out best profitng item, item 782, and see how many times
 It was ordered in more than one in terms of quantity. This is just for basic data tracking related
-to a product which is bestselling. This is done by unioning/intersecting(video initially had me use intersection but union was just used to show all sales) all sales order ids with only to a SalesOrderID where Product 782 appears on more than one line. The output will be blank
-as item has only been bought once.*/
+to a product which is bestselling. This is done by unioning/intersecting(video initially had me use intersection but union was just used to show all sales) all sales order ids
+with only to a SalesOrderID where Product 782 appears on more than one line. The output will be blank as item has only been bought once.*/
 
 SELECT SalesOrderID, ProductID, LineTotal
 FROM Sales.SalesOrderDetail
