@@ -11,7 +11,8 @@ All video recordings have been provided below:
 
 The group split up into 2 pairs and 1 solo member:
 
-Pair 1: Yousuf Ahmed and Esfar Rakin
+Pair 1: Yousuf Ahmed(Timestamp 16:16-28:01)  and Esfar Rakin (Timestamp 0:00-16:16)
+https://youtu.be/Ju4NtI8MHQA
 
 Pair 2:Justin Zara(Timestamp 14:10-20:25) and Sayantan Saha (Timestamp 0:00-14:10)
 https://www.youtube.com/watch?v=AxoyUdXvWfo
