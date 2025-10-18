@@ -13,7 +13,8 @@ The group split up into 2 pairs and 1 solo member:
 
 Pair 1: Yousuf Ahmed and Esfar Rakin
 
-Pair 2:Justin Zara and Sayantan Saha
+Pair 2:Justin Zara(Timestamp 14:10-20:25) and Sayantan Saha (Timestamp 0:00-14:10)
+https://www.youtube.com/watch?v=AxoyUdXvWfo
 
 Solo: Fahim Tanvir
 https://www.youtube.com/watch?v=XE4l00MU_es
