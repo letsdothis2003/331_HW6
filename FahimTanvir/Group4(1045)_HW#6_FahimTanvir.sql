@@ -106,11 +106,6 @@ about employees/management and about suppliers or customers separate.*/
 EXCEPT
 SELECT BusinessEntityID FROM HumanResources.Employee;
 
-
-
-
-
-
 --6.)
 /*Finds customers who buy a lot and separates them from customers who buy only 1 item.
 This is done by a union between customers after looking at the ammount of purchases
@@ -219,7 +214,6 @@ UNION
 SELECT SalesOrderID, OrderDate
 FROM Sales.SalesOrderHeader
 WHERE YEAR(OrderDate) = 2014
-
 ORDER BY OrderDate;
 
 
